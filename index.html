@@ -12,9 +12,9 @@
     <nav class="navbar navbar-dark bg-dark shadow py-3">
         <div class="container">
             <div class="row w-100 align-items-center">
-                <div class="col-sm-4 text-center text-white"> SIU-WEB </div>
-                <div class="col-sm-4 text-center text-white fw-bold"> SISTEMA ACADEMICO DOCENTE </div>
-                <div class="col-sm-4 text-end text-white">
+                <div class="col-12 col-md-4 text-center text-white mb-2 mb-md-0"> SIU-WEB </div>
+                <div class="col-12 col-md-4 text-center text-white fw-bold mb-2 mb-md-0"> SISTEMA ACADEMICO DOCENTE </div>
+                <div class="col-12 col-md-4 text-md-end text-center text-white">
                     Usuario: A. Cisneros<br>
                     Período: 2026-I
                 </div>
@@ -28,18 +28,23 @@
         </div>
     </div>
 
-    <div class="container align-items-end d-flex justify-content-end mb-3">
-        <button id="toggle-view-btn" type="button" class="btn btn-light">Vista Lista | Calendario</button>
-        <button type="button" class="btn btn-primary btn-sm mx-1">IMPRIMIR REPORTE</button>
-        <button type="button" class="btn btn-success btn-sm mx-1">EXPORTAR A EXCEL</button>
-        <button type="button" class="btn btn-secondary btn-sm mx-1">CERRAR SESION</button>
+    <div class="container d-flex flex-column flex-sm-row align-items-end justify-content-end gap-2 mb-3">
+        <div class="btn-group" role="group" aria-label="acciones">
+            <button id="toggle-view-btn" type="button" class="btn btn-light">Vista Lista | Calendario</button>
+            <button type="button" class="btn btn-primary btn-sm">IMPRIMIR REPORTE</button>
+        </div>
+        <div class="d-flex gap-2">
+            <button type="button" class="btn btn-success btn-sm">EXPORTAR A EXCEL</button>
+            <button type="button" class="btn btn-secondary btn-sm">CERRAR SESION</button>
+        </div>
     </div>
 
 
 
 
-    <div id="table-container" class="container my-4">
-    <table class="table table-bordered table-striped table-responsive">
+        <div id="table-container" class="container my-4">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-sm">
         <thead>
             <tr>
                 <th>CODIGO</th>
@@ -172,8 +177,9 @@
                 </td>
             </tr>
         </tbody>
-    </table>
-    </div>
+                </table>
+            </div>
+        </div>
 
     <div id="calendar-container" class="container my-4" style="display:none;"></div>
 
