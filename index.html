@@ -29,7 +29,7 @@
     </div>
 
     <div class="container align-items-end d-flex justify-content-end mb-3">
-        <button type="button" class="btn btn-light">Vista Lista | Calendario</button>
+        <button id="toggle-view-btn" type="button" class="btn btn-light">Vista Lista | Calendario</button>
         <button type="button" class="btn btn-primary btn-sm mx-1">IMPRIMIR REPORTE</button>
         <button type="button" class="btn btn-success btn-sm mx-1">EXPORTAR A EXCEL</button>
         <button type="button" class="btn btn-secondary btn-sm mx-1">CERRAR SESION</button>
@@ -38,7 +38,7 @@
 
 
 
-    <div class="container my-4">
+    <div id="table-container" class="container my-4">
     <table class="table table-bordered table-striped table-responsive">
         <thead>
             <tr>
@@ -175,6 +175,8 @@
     </table>
     </div>
 
+    <div id="calendar-container" class="container my-4" style="display:none;"></div>
+
     <hr class="w-50 mx-auto mt-5">
 
     <div class="container">
@@ -182,6 +184,10 @@
             Sistema de Gestión Académica - Derechos Reservados 1999-2005
         </div>
     </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
